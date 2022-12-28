@@ -5,50 +5,109 @@
         </title>
 
         <script src="/Users/jawaharreddynomula/Desktop/UI/js/sign-up.js"></script>
-
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
 
     <body>
-        <img src="/Users/jawaharreddynomula/Desktop/UI/images/eficens.jpeg" alt="Eficens Logo" width="200" height="200"><br><br>
-        <a href= "/Users/jawaharreddynomula/Desktop/UI/index.html"> Home</a>  <br>
-        <a href="login.html">Login</a>
-		<div id="successMessage"></div><br>
-		<div id="errors"></div><br>
+
+        <table align="center">
+
+            <tr>
+                <td colspan="2">
+                    <img src="/Users/jawaharreddynomula/Desktop/UI/images/cars.jpeg"  alt="Cars" width="200" height="200"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <a href= "/Users/jawaharreddynomula/Desktop/UI/index.html"> Home</a>  <br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a href="login.html">Login</a>
+                </td>
+            </tr>
+        </table>
+       
+        
+        
+		<div  align= "center" id="successMessage"></div><br>
+		<div align ="center"  id="errors"></div><br>
 		<form id="signUpFrom">
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <table align ="center">
 
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
 
-            <label for="dob">Date of Birth:</label><br>
-            <input type="date" id="dob" name="dob"><br>
+            <tr>
+            <td><label for="fname">First Name:</label><br></td>
+            <td>
+                <input type="text" id="fname" name="fname"><br>
+            </td>
+        </tr>
 
-            <label for="email">Email ID:</label><br>
-            <input type="text" id="email" name="email"><br>
 
-            <label for="phone">Phone Number:</label><br>
-            <input type="text" id="phone" name="phone"><br>
+        <tr>
+            <td><label for="lname">Last Name:</label><br></td>
+            <td><input type="text" id="lname" name="lname"><br></td>
+        </tr>
 
-            <h3> Select Gender</h3>
-            <input type="radio" id="female" name="gender" value="female" >
-            <label for="female">Female</label><br>
+        <tr>
+            <td><label for="dob">Date of Birth:</label><br></td>
+            <td><input type="date" id="dob" name="dob"><br></td>
+        </tr>
+
+        <tr>
+            <td> <label for="email">Email ID:</label><br></td>
+            <td>   <input type="text" id="email" name="email"><br></td>
+        </tr>
+
+
+        <tr>
+            <td> <label for="phone">Phone Number:</label><br></td>
+            <td> <input type="text" id="phone" name="phone"><br> </td>
+        </tr>
             
-            <input type="radio" id="male" name="gender" value="male" >
-            <label for="male">Male</label><br>
+         
 
-            <h3>Interested In Buy</h3>
-            <input type="checkbox" id="cloths" name="cloths" value="cloths" >
-            <label for="cloths">Cloths</label><br>
+         <tr> 
+            <td><h3> Select Gender</h3></td>
+        
+         
 
-            <input type="checkbox" id="electronics" name="electronics" value="electronics" >
-            <label for="electronics">Electronics</label><br>
+        
+            <td>
+                <input type="radio" id="female" name="gender" value="female" >
+                <label for="female">Female</label><br>
 
-            <input type="checkbox" id="books" name="books" value="books" >
-            <label for="books">Books</label><br>
+
+                <input type="radio" id="male" name="gender" value="male" >
+                <label for="male">Male</label><br>
+            </td>
+         </tr> 
+
+                
+
+         <tr>
+            <td>
+                <h3>Interested In Buy</h3>
+            </td>
 
 
-            <label for="country" id ="country"></label><br>
+            <td> <input type="checkbox" id="cars" name="cars" value="cars" >
+                 <label for="cars">Cars</label><br>
+
+            
+                <input type="checkbox" id="bikes" name="bikes" value="bikes" >
+            
+            <label for="bikes">Bikes</label><br>
+             <input type="checkbox" id="bicycle" name="bicycle" value="bicycle" >
+             <label for="bicycle">Bicycle</label><br></td>
+        
+         </tr> 
+
+         <tr>
+            <td>
+                <label for="country" ></label><br>
             <select name="country" id="country">
             <option value="">Select Country</option>
             <option value="USA">USA</option>
@@ -57,21 +116,40 @@
             <option value="Canada">Canada</option>
             <option value="Sri Lanka">Sri Lanka</option>
             </select><br><br>
+            </td>
+         </tr> 
 
-            <label for="password">Password:</label><br>
+         <tr>
+            <td>
+                <label for="password">Password:</label><br>
             <input type="password" id ="password" name="password"><br>
+
 
             <label for="confirmPassword">Confirm Password:</label><br>
             <input type="password" id ="confirmPassword" name="confirmPassword"><br>
+            </td>
+         </tr> 
 
-            <label for="shippingAddress">Shipping Address:</label><br>
-            <textarea id ="shippingAddress"  rows="5" cols="30" name="shippingAddress"></textarea><br><br>
 
+         <tr>
+            <td>
+                <label for="shippingAddress">Shipping Address:</label><br>
+                <textarea id ="shippingAddress"  rows="5" cols="30" name="shippingAddress"></textarea><br><br>
+            </td>
+         </tr>
+
+
+         <tr>
+            <td>
             <button type="button" onclick="validateForm();">Sign Up</button>
 			<input type="button" onclick="confirmClearFields();" value="Clear All Fields">
+            </td>
+         </tr>
+           
 
+        
 
-
+        </table>
 
           </form>
 

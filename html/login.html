@@ -3,24 +3,89 @@
         <title>
             Customer Login Page
         </title>
+        <script type="text/javascript" src="../js/login.js"></script>
+        <link rel="stylesheet" href="../css/styles.css">
 
-        <script src="/Users/jawaharreddynomula/Desktop/UI/js/login.js"></script>
+
     </head>
 
     <body>
-        <img src="/Users/jawaharreddynomula/Desktop/UI/images/eficens.jpeg" alt="Eficens Logo" width="200" height="200"><br><br>
-        <a href= "/Users/jawaharreddynomula/Desktop/UI/index.html"> Home</a>  <br>
-        <div id="errors"></div><br>
+        <table align="center">
+
+            <tr>
+                <td colspan="2">
+                    <img src="../images/cars.jpeg" alt="Cars" width="200" height="100"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <a href="../index.html">Home</a><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a href="sign-up.html">Sign Up</a><br><br>
+                </td>
+            </tr>
+
+        </table> 
+		
+		
+
+
+
+
+
+		<div align ="center"  id="errors"></div><br>
 		<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+            <table align ="center">
 
-            <label for="email">Email ID:</label><br>
-            <input type="text" id="email" name="email"> <br>
 
-            <label for="password">Password:</label><br>
-            <input type="text" id ="password" name="password"><br>
+            <tr>
+            <td><label for="email">Email ID:</label><br>
+            <input type="text" id="email" name="email"> <br></td>
+        </tr>
 
-            <button type="submit">Login</button>
+            <tr>
+                 <td><label for="password">Password:</label><br>
+                  <input type="text" id ="password" name="password"><br></td>
+            </tr>
+
+<tr>  
+
+            <td>
+                <input type="submit"></button>
 			<input type="button" onclick="clearAllTheFields();" value="Clear All Fields">
+            </td>
+        </tr>
+
+
+
+        
+		
+
+            
+
+        
+
         </form>
-    </body>
+    </body> 
+
+
+    <!-- <body>
+		<img src="../images/cars.jpeg" alt="cars" width="200" height="100"><br><br>
+		<a href="../index.html">Home</a><br><br>
+		<div id="errors"></div><br>
+		<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+			<label for="email">Email Id:</label><br>
+			<input type="text" id="email" name="email"><br>
+			
+			<label for="password">Password:</label><br>
+			<input type="password" id="password" name="password"><br><br>
+			
+			<input type="submit" value="Submit"/>
+			<input type="button" onclick="clearAllTheFields();" value="Clear All Fields">
+		</form>
+	</body> -->
 </html>

@@ -43,12 +43,12 @@ function validateForm() {
 		errors = errors + "Please Select Gender.<br>";
 	}
 	
-	var cloths = document.getElementById("cloths").checked; 
-	var electronics = document.getElementById("electronics").checked; 
-	var books = document.getElementById("books").checked; 
-	if( (cloths == '' || cloths == undefined) && 
-		(electronics == '' || electronics == undefined) &&
-		(books == '' || books == undefined)
+	var cloths = document.getElementById("cars").checked; 
+	var electronics = document.getElementById("bikes").checked; 
+	var books = document.getElementById("bicycle").checked; 
+	if( (cars == '' || cars == undefined) && 
+		(bikes == '' || bikes == undefined) &&
+		(bicycle == '' || bicycle == undefined)
 	) {
 		errors = errors + "Please Select Atleast one hobby.<br>";
 	}
@@ -107,9 +107,9 @@ function clearAllTheFields() {
 	document.getElementById("phone").value = "";
 	document.getElementById("female").checked = false;
 	document.getElementById("male").checked = false;
-	document.getElementById("cloths").checked = false;
-	document.getElementById("electronics").checked = false;
-	document.getElementById("books").checked = false;
+	document.getElementById("cars").checked = false;
+	document.getElementById("bikes").checked = false;
+	document.getElementById("bicycle").checked = false;
 	document.getElementById("country").value = "";
 	document.getElementById("password").value = "";
 	document.getElementById("confirmPassword").value = "";
