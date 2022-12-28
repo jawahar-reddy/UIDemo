@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Customer Login Page
+        </title>
+
+        <script src="/Users/jawaharreddynomula/Desktop/UI/js/login.js"></script>
+    </head>
+
+    <body>
+        <img src="/Users/jawaharreddynomula/Desktop/UI/images/eficens.jpeg" alt="Eficens Logo" width="200" height="200"><br><br>
+        <a href= "/Users/jawaharreddynomula/Desktop/UI/index.html"> Home</a>  <br>
+        <div id="errors"></div><br>
+		<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+
+
+            <label for="email">Email ID:</label><br>
+            <input type="text" id="email" name="email"> <br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id ="password" name="password"><br>
+
+            <button type="submit">Login</button>
+			<input type="button" onclick="clearAllTheFields();" value="Clear All Fields">
+        </form>
+    </body>
+</html>
